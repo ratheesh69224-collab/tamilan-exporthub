@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tamilan Export Hub | Quality Indian Products</title>
+
+    <meta name="description"
+          content="Explore quality Indian turmeric, black pepper, cardamom and rice from Tamilan Export Hub.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#home" class="logo">
+             Tamilan <span>Export Hub</span>
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+            <a href="#cart" class="cart-link">
+                🛒 Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">QUALITY PRODUCTS FROM INDIA</p>
+
+                <h1>
+                    From India<br>
+                    <span>To The World 🌍</span>
+                </h1>
+
+                <p>
+                    Discover quality Indian spices and agricultural
+                    products from Tamilan Export Hub.
+                </p>
+
+                <a href="#products" class="btn">
+                    Explore Products
+                </a>
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about section" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">ABOUT OUR BUSINESS</p>
+                <h2>Welcome to Tamilan Export Hub</h2>
+            </div>
+
+            <p class="about-text">
+                Tamilan Export Hub showcases Indian agricultural
+                products, including turmeric, black pepper, cardamom
+                and rice. Our goal is to help customers explore
+                quality products from India and make enquiries
+                conveniently through our website.
+            </p>
+
+            <div class="features">
+                <div class="feature">
+                    <span>🌿</span>
+                    <h3>Quality Products</h3>
+                    <p>Carefully selected agricultural products.</p>
+                </div>
+
+                <div class="feature">
+                    <span>📦</span>
+                    <h3>Order Enquiries</h3>
+                    <p>Send your product requirements easily.</p>
+                </div>
+
+                <div class="feature">
+                    <span>🌍</span>
+                    <h3>Export Focus</h3>
+                    <p>Connecting Indian products with global buyers.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PRODUCTS -->
+        <section class="products section" id="products">
+            <div class="section-heading">
+                <p class="eyebrow">OUR PRODUCTS</p>
+                <h2>Explore Our Products</h2>
+                <p>Choose your products and add them to your cart.</p>
+            </div>
+
+            <div class="product-grid">
+
+                <!-- TURMERIC -->
+                <article class="product-card">
+                    <div class="product-image turmeric-image">
+    <img src="https://voraspices.com/wp-content/uploads/2025/12/turmeric-powder-supplier.webp"
+         alt="Indian turmeric"
+         loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Turmeric</h3>
+
+                        <p>
+                            Indian turmeric, widely used in cooking
+                            for its colour and flavour.
+                        </p>
+
+                        <p class="price">
+                            ₹100 <span>/ kg</span>
+                        </p>
+
+                        <label for="qty-turmeric">Quantity (kg)</label>
+                        <input type="number"
+                               id="qty-turmeric"
+                               min="1"
+                               max="1000"
+                               value="1">
+
+                        <button class="btn add-btn"
+                                data-name="Turmeric"
+                                data-price="100"
+                                data-qty="qty-turmeric">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+
+                <!-- BLACK PEPPER -->
+                <article class="product-card">
+                    <div class="product-image pepper-image">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDjzDTiuWgMqVzYvaKeL51mxzcyNRpQ1lGESJvZqcohER-C5UJ05Ncw24&s=10"
+         alt="Indian black pepper"
+         loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Black Pepper</h3>
+
+                        <p>
+                            Aromatic black pepper used in a variety
+                            of Indian and international dishes.
+                        </p>
+
+                        <p class="price">
+                            ₹250 <span>/ kg</span>
+                        </p>
+
+                        <label for="qty-pepper">Quantity (kg)</label>
+                        <input type="number"
+                               id="qty-pepper"
+                               min="1"
+                               max="1000"
+                               value="1">
+
+                        <button class="btn add-btn"
+                                data-name="Black Pepper"
+                                data-price="250"
+                                data-qty="qty-pepper">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+
+                <!-- CARDAMOM -->
+                <article class="product-card">
+                    <div class="product-image cardamom-image">
+    <img src="https://keralaspicesmysore.com/wp-content/uploads/2020/06/keralaspicesmysore-18-1.png"
+         alt="Green cardamom"
+         loading="lazy">
+</div>
+
+                    <div class="product-info">
+                        <h3>Cardamom</h3>
+
+                        <p>
+                            Fragrant cardamom used in sweets,
+                            beverages and traditional recipes.
+                        </p>
+
+                        <p class="price">
+                            ₹400 <span>/ kg</span>
+                        </p>
+
+                        <label for="qty-cardamom">Quantity (kg)</label>
+                        <input type="number"
+                               id="qty-cardamom"
+                               min="1"
+                               max="1000"
+                               value="1">
+
+                        <button class="btn add-btn"
+                                data-name="Cardamom"
+                                data-price="400"
+                                data-qty="qty-cardamom">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+
+                <!-- RICE -->
+                <article class="product-card">
+                    <div class="product-image rice-image">
+    <img src="https://media.istockphoto.com/id/153737841/photo/rice.jpg?s=612x612&w=0&k=20&c=lfO7iLT0UsDDzra0uBOsN1rvr2d5OEtrG2uwbts33_c="
+         alt="Indian rice"
+         loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Rice</h3>
+
+                        <p>
+                            Rice for everyday cooking and a variety
+                            of traditional meals.
+                        </p>
+
+                        <p class="price">
+                            ₹60 <span>/ kg</span>
+                        </p>
+
+                        <label for="qty-rice">Quantity (kg)</label>
+                        <input type="number"
+                               id="qty-rice"
+                               min="1"
+                               max="1000"
+                               value="1">
+
+                        <button class="btn add-btn"
+                                data-name="Rice"
+                                data-price="60"
+                                data-qty="qty-rice">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="price-note">
+                Note: The displayed prices are sample prices.
+                Confirm actual prices and availability before ordering.
+            </p>
+        </section>
+
+
+        <!-- SHOPPING CART -->
+        <section class="cart-section section" id="cart">
+            <div class="section-heading">
+                <p class="eyebrow">YOUR SELECTION</p>
+                <h2>🛒 Your Shopping Cart</h2>
+            </div>
+
+            <div id="cartItems" class="cart-items">
+                <p class="empty-cart">Your cart is empty.</p>
+            </div>
+
+            <div class="cart-summary">
+                <h3>
+                    Total Amount:
+                    ₹<span id="cartTotal">0.00</span>
+                </h3>
+
+                <button type="button"
+                        class="btn clear-btn"
+                        id="clearCart">
+                    Clear Cart
+                </button>
+            </div>
+
+
+            <!-- CUSTOMER DETAILS -->
+            <div class="checkout">
+                <h3>Customer Details</h3>
+
+                <form id="checkoutForm">
+
+                    <label for="customerName">Full Name</label>
+                    <input type="text"
+                           id="customerName"
+                           maxlength="100"
+                           autocomplete="name"
+                           required>
+
+                    <label for="customerPhone">Phone Number</label>
+                    <input type="tel"
+                           id="customerPhone"
+                           maxlength="20"
+                           autocomplete="tel"
+                           required>
+
+                    <label for="customerAddress">Delivery Address</label>
+                    <textarea id="customerAddress"
+                              rows="4"
+                              maxlength="500"
+                              autocomplete="street-address"
+                              required></textarea>
+
+                    <button type="submit" class="btn order-btn">
+                        📲 Order via WhatsApp
+                    </button>
+
+                </form>
+
+                <p class="small-note">
+                    Your order details will be prepared in WhatsApp.
+                    You must press Send in WhatsApp to send the order.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="contact section" id="contact">
+            <div class="section-heading">
+                <p class="eyebrow">GET IN TOUCH</p>
+                <h2>Contact Us</h2>
+                <p>Contact us for product enquiries and order details.</p>
+            </div>
+
+            <div class="contact-cards">
+
+                <a href="#cart" class="contact-card">
+                    <span>📦</span>
+                    <h3>Product Enquiries</h3>
+                    <p>Choose products and submit your order enquiry.</p>
+                </a>
+
+                <!-- WhatsApp Contact Card -->
+<a id="contactWhatsApp"
+   class="contact-card"
+   href="https://wa.me/916382378043"
+   target="_blank"
+   rel="noopener noreferrer">
+
+    <img src="https://thumbs.dreamstime.com/b/whatsapp-logo-icon-flat-style-social-media-app-vector-315610258.jpg"
+         alt="WhatsApp Logo"
+         class="contact-logo">
+
+    <h3>WhatsApp</h3>
+    <p>Contact our business through WhatsApp.</p>
+
+</a>
+
+<!-- Instagram Contact Card -->
+
+<a id="contactWhatsApp"
+   class="contact-card"
+   href="https://www.instagram.com/?flo=true"
+   target="_blank"
+   rel="noopener noreferrer">
+
+    <img src="C:\Users\Ratheesh\OneDrive\TamilanExportHub\instagram-circle-logo-icon-ig-app-transparent-background-premium-social-media-design-for-digital-download-free-png.webp"
+         alt="Instagram Logo"
+         class="contact-logo">
+
+    <h3>Instagram</h3>
+    <p>Contact our business through Instagram.</p>
+
+</a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Floating Social Media Logos -->
+
+<div class="social-icons">
+
+    <!-- WhatsApp Logo -->
+    <a href="https://wa.me/916382378043"
+       target="_blank"
+       class="social-link"
+       aria-label="WhatsApp">
+
+        <img src="https://img.magnific.com/premium-vector/whatsapp-logo-white-background-vector_980129-12073.jpg?semt=ais_hybrid&w=740&q=80"
+             alt="WhatsApp Logo">
+    </a>
+
+    <!-- Instagram Logo -->
+<a href="https://www.instagram.com/?flo=true"
+   target="_blank"
+   class="social-link"
+   aria-label="Instagram">
+        <img src="C:\Users\Ratheesh\OneDrive\TamilanExportHub\instagram-circle-logo-icon-ig-app-transparent-background-premium-social-media-design-for-digital-download-free-png.webp"
+             alt="Instagram Logo">
+    </a>
+
+</div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="#home" class="footer-logo">
+            🌿 Tamilan Export Hub
+        </a>
+
+        <p>From India to the World 🌍</p>
+
+        <p>
+            &copy; <span id="currentYear"></span>
+            Tamilan Export Hub. All rights reserved.
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
