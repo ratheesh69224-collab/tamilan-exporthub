@@ -167,3 +167,72 @@ if (checkoutForm) {
 
 // INITIAL CART DISPLAY
 updateCart();
+
+// Confirm Order
+function confirmOrder() {
+    if (cart.length === 0) {
+        alert("Your cart is empty! Please add products first.");
+        return;
+    }
+
+    let orderDetails = "🌿 TAMILAN EXPORT HUB - ORDER\n\n";
+
+    cart.forEach((product, index) => {
+        orderDetails += `${index + 1}. ${product}\n`;
+    });
+
+    orderDetails += "\nPlease confirm the price and delivery details.";
+
+    const message = document.getElementById("order-message");
+
+    if (message) {
+        message.textContent =
+            "Order prepared! Continue to WhatsApp to send your order.";
+    }
+
+    // Replace with your actual WhatsApp number.
+    // Include country code, without + or spaces.
+    const SHOP_WHATSAPP = "91XXXXXXXXXX";
+
+    if (SHOP_WHATSAPP === "91XXXXXXXXXX") {
+        alert("Please add your actual WhatsApp business number in script.js.");
+        return;
+    }
+
+    const whatsappURL =
+        "https://wa.me/" +
+        SHOP_WHATSAPP +
+        "?text=" +
+        encodeURIComponent(orderDetails);
+
+    window.open(whatsappURL, "_blank");
+}
+
+
+// Cancel Order
+function cancelOrder() {
+    if (cart.length === 0) {
+        alert("Your cart is already empty!");
+        return;
+    }
+
+    const confirmCancel = confirm(
+        "Are you sure you want to cancel this order?"
+    );
+
+    if (confirmCancel) {
+        cart = [];
+
+        if (typeof updateCart === "function") {
+            updateCart();
+        }
+
+        const message = document.getElementById("order-message");
+
+        if (message) {
+            message.textContent = "Order cancelled. Your cart is now empty.";
+        }
+
+        alert("Order cancelled successfully!");
+    }
+}
